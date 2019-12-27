@@ -58,13 +58,13 @@ namespace Xadrez
         {
             for (int i = 0; i < tab.Linhas; i++){
 
-                Console.Write(8 - i );
+                Console.Write(8 - i + " ");
 
                 for(int j = 0; j < tab.Colunas; j++)
                 {
                  
                     Tela.imprimirPeca(tab.peca(i, j));
-
+                    
                 }
                 Console.WriteLine();
             }
@@ -113,7 +113,7 @@ namespace Xadrez
         {
             if (peca == null)
             {
-                Console.Write("- ");
+                Console.Write("-");
             }
             else
             {
