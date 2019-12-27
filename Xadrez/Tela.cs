@@ -58,7 +58,7 @@ namespace Xadrez
         {
             for (int i = 0; i < tab.Linhas; i++){
 
-                Console.Write(8 - i + " ");
+                Console.Write(8 - i );
 
                 for(int j = 0; j < tab.Colunas; j++)
                 {
@@ -69,7 +69,7 @@ namespace Xadrez
                 Console.WriteLine();
             }
 
-            Console.WriteLine("  a  b  c  d  e  f  g  h");
+            Console.WriteLine("  a b c d e f g h");
         }
 
         public static void imprimirTabuleiro(Tabuleiro tab, bool[,] posicoesPossiveis)
@@ -97,7 +97,7 @@ namespace Xadrez
                 Console.WriteLine();
             }
 
-            Console.WriteLine("  a  b  c  d  e  f  g  h");
+            Console.WriteLine("  a b c d e f g h");
             Console.BackgroundColor = fundoOriginal;
         }
 
@@ -113,7 +113,7 @@ namespace Xadrez
         {
             if (peca == null)
             {
-                Console.Write("_ ");
+                Console.Write("- ");
             }
             else
             {
@@ -130,8 +130,8 @@ namespace Xadrez
                 }
             }
             Console.Write(" ");
-            
-        
+
+
         }
     }
 }
